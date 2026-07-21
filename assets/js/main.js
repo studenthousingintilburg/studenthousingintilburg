@@ -59,6 +59,45 @@ const i18n = {
     ph_message: "Type your message here...",
     btn_submit: "Submit :)",
     
+    // About SHT Page
+    aboutsht_title: "About SHT",
+    aboutsht_subtitle: "Supporting homeless students in Tilburg through couchsurfing & mutual aid",
+    mission_title: "Our Mission & Vision",
+    mission_p1: "Student Housing in Tilburg (SHT) was founded to address the severe housing shortage facing students arriving in Tilburg each semester. Every year, hundreds of international and domestic students arrive in Tilburg without permanent accommodation. Many are forced to stay in expensive hotels, travel hours daily, or even consider canceling their studies before they begin.",
+    model_title: "How the Couchsurfing Model Works",
+    model_p1: "SHT operates on a mutual aid couchsurfing principle. We connect homeless students with local residents, students, and hosts who have a spare room, couch, futon, or air mattress available for short-term stays (ranging from a few days up to 3 months).",
+    key_principles_title: "Key Principles:",
+    principle_1: "Non-Profit & Free Service: SHT does not charge registration fees or subscription costs to students or hosts.",
+    principle_2: "Safety & Screening: We process application details to ensure suitable, compatible matches between hosts and students.",
+    principle_3: "Support & Advocacy: We also offer viewing representation for international students who cannot attend in-person housing viewings in the Netherlands.",
+    sam_partner_title: "Partnership with Student Party SAM",
+    sam_partner_p1: "SHT works in close collaboration with Student Party SAM, a prominent faction in the Tilburg University Council. SAM helps provide organizational support, advocacy within university leadership, and outreach to broaden emergency housing options across Tilburg.",
+
+    // About SAM Page
+    aboutsam_page_title: "About Student Party SAM",
+    aboutsam_subtitle: "Representing all students at Tilburg University Council",
+    sam_mission_title: "Representation & Student Welfare",
+    sam_quote_jeroen: "\"Housing is a basic necessity for any student to excel in their academic career. SHT is an essential safety net for students arriving in Tilburg.\"",
+    sam_quote_julie: "\"Internationalisation brings immense value to our university, but we must ensure every student has a safe place to sleep when they arrive in the Netherlands.\"",
+
+    // Apply Page
+    apply_portal_title: "Application Portals",
+    apply_portal_subtitle: "Host a homeless student or request emergency accommodation",
+    apply_select_type: "Select Your Application Type",
+    apply_select_desc: "Choose whether you are a resident wanting to host a student, or a student seeking emergency housing in Tilburg.",
+    host_form_btn: "Open Host Form",
+    student_form_btn: "Open Student Form",
+    viewing_assist_title: "Viewing Representation Assistance",
+    viewing_assist_desc: "We offer to become your representative in Tilburg: we can attend housing viewings on your behalf, ask questions, inspect the property, and help raise your chances of securing permanent accommodation while avoiding online scammers.",
+    btn_request_viewing: "Request Viewing Representation",
+
+    // FAQ Page
+    faq_page_title: "Frequently Asked Questions",
+    faq_subtitle: "Find answers to common questions about hosting, applying for emergency housing, and viewing representation.",
+    faq_cat_general: "General Questions",
+    faq_cat_hosts: "For Hosts",
+    faq_cat_students: "For Homeless Students",
+
     footer_desc: "Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.",
     footer_quick_links: "Quick Links",
     footer_legal: "Legal & Policies",
@@ -124,6 +163,45 @@ const i18n = {
     ph_subject: "Onderwerp",
     ph_message: "Typ hier uw bericht...",
     btn_submit: "Versturen :)",
+
+    // About SHT Page
+    aboutsht_title: "Over SHT",
+    aboutsht_subtitle: "Dakloze studenten in Tilburg ondersteunen via couchsurfing & wederzijdse hulp",
+    mission_title: "Onze Missie & Visie",
+    mission_p1: "Student Housing in Tilburg (SHT) is opgericht om de ernstige kamernood aan te pakken waar studenten bij aanvang van elk semester mee te maken krijgen. Elk jaar komen honderden internationale en Nederlandse studenten in Tilburg aan zonder vaste woonruimte. Velen moeten in duren hotels verblijven, dagelijks uren reizen of zelfs overwegen hun studie te staken.",
+    model_title: "Hoe Het Couchsurfing-Model Werkt",
+    model_p1: "SHT werkt op basis van een couchsurfing-principe van wederzijdse hulp. Wij brengen dakloze studenten in contact met inwoners en studenten die een reservekamer, bank, futon of luchtbed beschikbaar hebben voor een kort verblijf (van enkele dagen tot 3 maanden).",
+    key_principles_title: "Kernprincipes:",
+    principle_1: "Non-profit & Gratis Dienstverlening: SHT rekent geen inschrijfkosten of abonnementen aan studenten of hosts.",
+    principle_2: "Veiligheid & Screening: Wij verwerken aanvragen om een geschikte en veilige match tussen host en student te garanderen.",
+    principle_3: "Ondersteuning & Belangenbehartiging: Wij bieden ook bezichtigingsvertegenwoordiging voor internationale studenten die niet persoonlijk aanwezig kunnen zijn.",
+    sam_partner_title: "Samenwerking Met Fractie SAM",
+    sam_partner_p1: "SHT werkt nauw samen met Fractie SAM, een vooraanstaande fractie in de universiteitsraad van Tilburg University. SAM biedt organisatorische ondersteuning en zet zich in binnen het universiteitsbestuur om noodopvang in Tilburg te vergroten.",
+
+    // About SAM Page
+    aboutsam_page_title: "Over Fractie SAM",
+    aboutsam_subtitle: "Vertegenwoordigt alle studenten in de Universiteitsraad van Tilburg University",
+    sam_mission_title: "Vertegenwoordiging & Studentenwelzijn",
+    sam_quote_jeroen: "\"Huisvesting is een basisbehoefte voor elke student om te kunnen presteren. SHT vormt een essentieel vangnet voor studenten in Tilburg.\"",
+    sam_quote_julie: "\"Internationalisering brengt enorme waarde voor onze universiteit, maar we moeten ervoor zorgen dat elke student een veilige slaapplek heeft.\"",
+
+    // Apply Page
+    apply_portal_title: "Aanmeldportalen",
+    apply_portal_subtitle: "Host een dakloze student of vraag noodopvang aan",
+    apply_select_type: "Kies Uw Type Aanmelding",
+    apply_select_desc: "Kies of u een inwoner bent die een student wil hosten, of een student die spoedig noodopvang zoekt in Tilburg.",
+    host_form_btn: "Open Host Formulier",
+    student_form_btn: "Open Studenten Formulier",
+    viewing_assist_title: "Ondersteuning Bij Bezichtigingen",
+    viewing_assist_desc: "Wij bieden aan uw vertegenwoordiger in Tilburg te worden: wij kunnen namens u bezichtigingen bijwonen, vragen stellen, de woning inspecteren en uw kansen op een woning vergroten.",
+    btn_request_viewing: "Vraag Bezichtigingshulp Aan",
+
+    // FAQ Page
+    faq_page_title: "Veelgestelde Vragen",
+    faq_subtitle: "Vind antwoorden op veelgestelde vragen over hosten, noodopvang aanvragen en bezichtigingshulp.",
+    faq_cat_general: "Algemene Vragen",
+    faq_cat_hosts: "Voor Hosts",
+    faq_cat_students: "Voor Dakloze Studenten",
     
     footer_desc: "Student Housing in Tilburg is een non-profit initiatief voor wederzijdse hulp dat internationale en Nederlandse studenten helpt bij het vinden van noodopvang.",
     footer_quick_links: "Snelle Links",
@@ -165,11 +243,18 @@ function setLanguage(lang) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Initial Language setup from localStorage or default to EN
+function initLanguage() {
   const currentLang = localStorage.getItem('sht_lang') || 'en';
   setLanguage(currentLang);
+}
 
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguage);
+} else {
+  initLanguage();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
   // Bind change listener to all language selectors
   document.querySelectorAll('.lang-select').forEach(select => {
     select.addEventListener('change', (e) => {
