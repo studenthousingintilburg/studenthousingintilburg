@@ -467,7 +467,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 30, 65, 0.92) 20%, rgba(0, 60, 120, 0.4) 100%);
+  background: linear-gradient(to top, rgba(0, 35, 75, 0.85) 0%, rgba(0, 50, 110, 0.25) 65%, transparent 100%);
   z-index: 1;
 }
 
@@ -488,6 +488,11 @@ ul {
   position: relative;
   z-index: 2;
   text-align: center;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .portal-title {
