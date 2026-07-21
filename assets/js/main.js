@@ -381,27 +381,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
 
       try {
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: json
+          body: formData
         });
         const result = await response.json();
         if (result.success) {
           alert(localStorage.getItem('sht_lang') === 'nl' ? 'Dank u wel! Uw bericht is succesvol verzonden.' : 'Thank you! Your message has been sent successfully.');
           form.reset();
         } else {
-          alert(result.message || 'Error sending message. Please try again.');
+          // If Web3Forms returns an error message, show it or fallback to native submit
+          if (result.message && result.message.includes('Activation')) {
+            alert('Please check your email inbox to activate your Web3Forms access key!');
+          } else {
+            alert(result.message || 'Submitting form...');
+            form.submit();
+          }
         }
       } catch (error) {
-        alert('Network error. Please try again later.');
+        // Fallback to standard native HTML submission if AJAX is blocked by CORS/extensions
+        form.submit();
       } finally {
         if (submitBtn) {
           submitBtn.textContent = originalText;
