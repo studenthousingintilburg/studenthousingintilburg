@@ -173,7 +173,7 @@ ul {
   padding: 0.5rem;
 }
 
-/* --- Parallax Hero Section (Clear, Vibrant Overlay) --- */
+/* --- Parallax Hero Section --- */
 .hero {
   position: relative;
   background: linear-gradient(rgba(0, 35, 75, 0.35), rgba(0, 55, 115, 0.45)), url('../images/Banner.jpg') center/cover fixed no-repeat;
@@ -185,6 +185,38 @@ ul {
   align-items: center;
   justify-content: center;
   min-height: 520px;
+}
+
+.hero-aboutsam {
+  position: relative;
+  background: linear-gradient(rgba(0, 75, 145, 0.72), rgba(0, 75, 145, 0.72)), url('../images/20230809_SAM_BoardPictures-003 copy.png') center/cover fixed no-repeat;
+  color: var(--text-light);
+  text-align: center;
+  padding: 6.5rem 1.5rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+}
+
+.hero-aboutsam-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-aboutsam-logo {
+  height: 125px;
+  width: auto;
+  object-fit: contain;
+  margin-top: 0.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
 }
 
 .hero-title {
@@ -296,7 +328,7 @@ ul {
   color: var(--text-light);
 }
 
-/* Parallax Sections - Using Student1.png with clear/vibrant overlay */
+/* Parallax Sections */
 .parallax-what-we-do {
   position: relative;
   background: linear-gradient(rgba(0, 86, 158, 0.45), rgba(0, 86, 158, 0.45)), url('../images/Student1.png') center/cover fixed no-repeat;
@@ -518,6 +550,50 @@ ul {
 .portal-bottom-banner .btn:hover {
   background-color: var(--primary-dark);
   transform: translateY(-2px);
+}
+
+/* --- About SAM 50/50 Wix Layout --- */
+.aboutsam-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.aboutsam-split-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 520px;
+}
+
+.aboutsam-split-content {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.aboutsam-quote-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.aboutsam-quote-text {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.aboutsam-author {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #ffffff;
 }
 
 /* --- Contact Us Section (Wix Blue Style) --- */
@@ -763,51 +839,6 @@ ul {
   border: none;
 }
 
-/* --- Testimonial / Member Cards --- */
-.testimonial-card {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 2rem;
-  background: var(--bg-white);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 2.5rem;
-}
-
-.testimonial-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  min-height: 300px;
-}
-
-.testimonial-body {
-  padding: 2.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.testimonial-quote {
-  font-size: 1.05rem;
-  font-style: italic;
-  color: var(--text-main);
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
-}
-
-.testimonial-author {
-  font-weight: 700;
-  color: var(--primary-color);
-  font-size: 1.1rem;
-}
-
-.testimonial-role {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
 /* --- Footer --- */
 .site-footer {
   background-color: var(--bg-dark);
@@ -865,11 +896,14 @@ ul {
 
 /* --- Responsive Media Queries --- */
 @media (max-width: 900px) {
-  .testimonial-card {
+  .aboutsam-split {
     grid-template-columns: 1fr;
   }
-  .testimonial-img {
-    height: 320px;
+  .aboutsam-split-img {
+    height: 400px;
+  }
+  .aboutsam-split-content {
+    padding: 3rem 1.5rem;
   }
   .contact-layout-wix {
     grid-template-columns: 1fr;

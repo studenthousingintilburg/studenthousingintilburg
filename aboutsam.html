@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About SAM | Student Housing In Tilburg</title>
-  <meta name="description" content="Learn about Student Party SAM, their partnership with Student Housing in Tilburg, and student representation.">
+  <meta name="description"
+    content="Learn about Student Party SAM, their partnership with SHT, and their advocacy for student rights and housing in Tilburg.">
   <link rel="icon" type="image/png" href="assets/images/SHT_favicon.png">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- Site Header -->
@@ -21,7 +26,7 @@
       <a href="index.html" class="logo-link">
         <img src="assets/images/LogoSHT.png" alt="Student Housing in Tilburg Logo" class="logo-img">
       </a>
-      
+
       <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
         ☰
       </button>
@@ -43,54 +48,65 @@
     </div>
   </header>
 
-  <!-- Page Banner -->
-  <section class="hero" style="min-height: 260px; padding: 4rem 1.5rem 3rem;">
-    <h1 class="hero-title" data-i18n="aboutsam_page_title">About Student Party SAM</h1>
-    <p class="hero-subtitle" data-i18n="aboutsam_subtitle">Representing all students at Tilburg University Council</p>
+  <!-- Hero Banner with SAM Team Background & Prominent Logo -->
+  <section class="hero-aboutsam">
+    <h1 class="hero-aboutsam-title" data-i18n="aboutsam_page_title">About SAM</h1>
+    <img src="assets/images/Logo Fractie SAM - Mercury White (1).png" alt="Student Party SAM Logo" class="hero-aboutsam-logo">
   </section>
 
-  <!-- SAM Overview Section -->
+  <!-- About SAM Overview Text -->
   <section class="section">
-    <div class="container" style="max-width: 950px;">
+    <div class="container" style="max-width: 900px; text-align: center;">
       <div class="section-header">
-        <h2 class="section-title" data-i18n="sam_mission_title">Who is Student Party SAM?</h2>
-        <p class="section-desc" data-i18n="about_sam_desc">
+        <h2 class="section-title" data-i18n="sam_mission_title">About SAM</h2>
+        <p class="section-desc" data-i18n="about_sam_desc" style="font-weight: 600; color: var(--primary-color);">
           SHT is an initiative in collaboration with Student Party SAM.
         </p>
       </div>
 
-      <div style="font-size: 1.08rem; line-height: 1.8; color: var(--text-main); margin-bottom: 3.5rem;">
-        <p style="margin-bottom: 1.5rem;" data-i18n="about_sam_body">
-          SAM is a party in the university council which aims to represent all students of Tilburg University. The party values internationalisation of the university, but sees how students, both international and Dutch, have troubles finding proper housing. To excel at your studies, it is important to be able to live in a safe and welcoming environment.
+      <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-main); text-align: center;">
+        <p data-i18n="about_sam_body">
+          SAM is a party in the university council which aims to represent all students of Tilburg University. The party
+          values internationalisation of the university, but sees how students, both international and Dutch, have
+          troubles finding proper housing. To excel at your studies, it is important to be able to live in a safe and
+          welcoming environment. Therefore, SAM wants to take action and supports this initiative by being in close
+          contact with the university in order to provide emergency housing for students. Furthermore, we as SAM want to
+          set up a long term solution for this problem. Are you interested in thinking along with SAM? Please reach out!
+          We are always open to new ideas. You can reach us at <a
+            href="mailto:db@fractiesam.nl"><strong>db@fractiesam.nl</strong></a>.
         </p>
-        <p>
-          Are you interested in thinking along with SAM? Reach out directly via email at <a href="mailto:db@fractiesam.nl"><strong>db@fractiesam.nl</strong></a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- 50/50 Split Quotes Section (Wix Original Layout) -->
+  <section class="aboutsam-split">
+    <img src="assets/images/20230809_SAM_BoardPictures-029.jpg" alt="Jeroen Peters - International Officer SAM"
+      class="aboutsam-split-img">
+
+    <div class="aboutsam-split-content">
+      <div class="aboutsam-quote-block">
+        <p class="aboutsam-quote-text" data-i18n="sam_quote_jeroen">
+          "My name is Jeroen Peters, and this year I am the International Officer of Student Party SAM. As SAM, we aim
+          to represent the interests of all students, including international students. Housing is a big problem for
+          this group of students. These students come to Tilburg from another country to get the best out of themselves
+          and follow the study of their dreams. To achieve this, a roof over your head is an absolute necessity. These
+          students often have no backup plan if they cannot find a room and therefore sometimes even have to discontinue
+          their studies. I am fully committed to SHT to help this vulnerable group of students, so that ultimately every
+          student can live their ideal student life, without worries about housing."
         </p>
+        <div class="aboutsam-author">– Jeroen Peters</div>
       </div>
 
-      <!-- Testimonials / Quote Cards -->
-      <div class="testimonial-card">
-        <img src="assets/images/20230809_SAM_BoardPictures-029.jpg" alt="Jeroen Peters - International Officer SAM" class="testimonial-img">
-        <div class="testimonial-body">
-          <blockquote class="testimonial-quote" data-i18n="sam_quote_jeroen">
-            "Housing is a basic necessity for any student to excel in their academic career. SHT is an essential safety net for students arriving in Tilburg."
-          </blockquote>
-          <div class="testimonial-author">Jeroen Peters</div>
-          <div class="testimonial-role">International Officer — Student Party SAM</div>
-        </div>
+      <div class="aboutsam-quote-block">
+        <p class="aboutsam-quote-text" data-i18n="sam_quote_julie">
+          "SHT fully shares Student Party SAM's work ethics, values and beliefs. We could not have gathered the means to
+          turn our vision into reality without their encouragement, enthusiasm and constant assistance throughout.
+          Jeroen's actions towards a better environment for all students has moved this project forward incredibly fast,
+          proving SAM's interests reach far beyond the university campus. Thank you, guys!"
+        </p>
+        <div class="aboutsam-author">– Julie van Gerven</div>
       </div>
-
-      <div class="testimonial-card">
-        <img src="assets/images/20220815_SAM_BoardPictures-035.jpg" alt="Julie van Gerven - Chairman SAM" class="testimonial-img">
-        <div class="testimonial-body">
-          <blockquote class="testimonial-quote" data-i18n="sam_quote_julie">
-            "Internationalisation brings immense value to our university, but we must ensure every student has a safe place to sleep when they arrive in the Netherlands."
-          </blockquote>
-          <div class="testimonial-author">Julie van Gerven</div>
-          <div class="testimonial-role">Chairman — Student Party SAM</div>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -100,7 +116,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/Logo Fractie SAM - Mercury White2.png" alt="SHT Footer Logo" style="height: 48px;">
-          <p>Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.</p>
+          <p>Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and
+            Dutch students find emergency housing.</p>
         </div>
 
         <div>
@@ -120,7 +137,8 @@
           <ul class="footer-links">
             <li><a href="terms.html">Terms and Conditions</a></li>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="assets/pdf/General Terms and Conditions Student Housing in Tilburg.pdf" target="_blank">Download Terms (PDF)</a></li>
+            <li><a href="assets/pdf/General Terms and Conditions Student Housing in Tilburg.pdf"
+                target="_blank">Download Terms (PDF)</a></li>
             <li><a href="assets/pdf/PrivacyStatementSHT.pdf" target="_blank">Download Privacy Statement (PDF)</a></li>
           </ul>
         </div>
@@ -135,4 +153,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
