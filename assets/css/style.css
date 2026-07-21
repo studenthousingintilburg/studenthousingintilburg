@@ -441,37 +441,31 @@ ul {
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
-/* --- Split Action Portals --- */
-.split-portals {
+/* --- Split Action Portals (Original Wix 50/50 Layout) --- */
+.section-portals-wix {
+  background-color: var(--primary-color);
+  padding: 4.5rem 0 0;
+  color: var(--text-light);
+}
+
+.split-portals-wix {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 100%;
   margin-top: 2.5rem;
 }
 
-.portal-card {
+.portal-card-wix {
   position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  min-height: 380px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2.5rem 2rem;
-  color: var(--text-light);
-  transition: var(--transition);
+  overflow: hidden;
 }
 
-.portal-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 35, 75, 0.85) 0%, rgba(0, 50, 110, 0.25) 65%, transparent 100%);
-  z-index: 1;
-}
-
-.portal-card img {
+.portal-card-wix img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -480,33 +474,46 @@ ul {
   transition: transform 0.5s ease;
 }
 
-.portal-card:hover img {
-  transform: scale(1.05);
+.portal-card-wix:hover img {
+  transform: scale(1.04);
 }
 
-.portal-content {
+.portal-bottom-banner {
   position: relative;
   z-index: 2;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
-  padding: 1.5rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
 }
 
-.portal-title {
+.portal-bottom-banner h3 {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
-.portal-card p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
+.portal-bottom-banner .btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.portal-bottom-banner .btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 /* --- FAQ Accordion --- */
@@ -792,6 +799,12 @@ ul {
   .featured-logo-card {
     width: 140px;
     height: 140px;
+  }
+  .split-portals-wix {
+    grid-template-columns: 1fr;
+  }
+  .portal-card-wix {
+    height: 360px;
   }
   .footer-bottom {
     flex-direction: column;
