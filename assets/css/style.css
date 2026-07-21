@@ -219,6 +219,69 @@ ul {
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
 }
 
+.hero-aboutsht {
+  position: relative;
+  background: linear-gradient(rgba(0, 75, 145, 0.72), rgba(0, 75, 145, 0.72)), url('../images/SHTBlueEffect.png') center/cover fixed no-repeat;
+  color: var(--text-light);
+  text-align: center;
+  padding: 6.5rem 1.5rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+}
+
+.hero-aboutsht-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-aboutsht-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  margin-top: 0.5rem;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+/* --- Clean non-parallax page banner --- */
+.page-banner-clean {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-banner-clean .hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.page-banner-clean .hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #e0f2fe;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: none;
+  font-weight: 400;
+}
+
 .hero-title {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5vw, 3.8rem);

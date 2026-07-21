@@ -65,9 +65,9 @@ const i18n = {
     btn_privacy_pdf: "🔒 Privacy Statement (PDF)",
     
     // About SHT Page
-    aboutsht_title: "About SHT",
+    aboutsht_title: "ABOUT US",
     aboutsht_subtitle: "Supporting homeless students in Tilburg through couchsurfing & mutual aid",
-    mission_title: "Our Mission & Vision",
+    mission_title: "ABOUT STUDENT HOUSING IN TILBURG",
     mission_p1: "Student Housing in Tilburg (SHT) was founded to address the severe housing shortage facing students arriving in Tilburg each semester. Every year, hundreds of international and domestic students arrive in Tilburg without permanent accommodation. Many are forced to stay in expensive hotels, travel hours daily, or even consider canceling their studies before they begin.",
     model_title: "How the Couchsurfing Model Works",
     model_p1: "SHT operates on a mutual aid couchsurfing principle. We connect homeless students with local residents, students, and hosts who have a spare room, couch, futon, or air mattress available for short-term stays (ranging from a few days up to 3 months).",
@@ -201,9 +201,9 @@ const i18n = {
     btn_privacy_pdf: "🔒 Privacyverklaring (PDF)",
 
     // About SHT Page
-    aboutsht_title: "Over SHT",
+    aboutsht_title: "OVER ONS",
     aboutsht_subtitle: "Dakloze studenten in Tilburg ondersteunen via couchsurfing & wederzijdse hulp",
-    mission_title: "Onze Missie & Visie",
+    mission_title: "OVER STUDENT HOUSING IN TILBURG",
     mission_p1: "Student Housing in Tilburg (SHT) is opgericht om de ernstige kamernood aan te pakken waar studenten bij aanvang van elk semester mee te maken krijgen. Elk jaar komen honderden internationale en Nederlandse studenten in Tilburg aan zonder vaste woonruimte. Velen moeten in duren hotels verblijven, dagelijks uren reizen of zelfs overwegen hun studie te staken.",
     model_title: "Hoe Het Couchsurfing-Model Werkt",
     model_p1: "SHT werkt op basis van een couchsurfing-principe van wederzijdse hulp. Wij brengen dakloze studenten in contact met inwoners en studenten die een reservekamer, bank, futon of luchtbed beschikbaar hebben voor een kort verblijf (van enkele dagen tot 3 maanden).",
