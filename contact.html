@@ -82,24 +82,28 @@
 
         <!-- Right: Minimalist Form -->
         <div>
-          <form class="wix-contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+          <form class="wix-contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f5a3aaf1-c86a-476d-8b48-2391dd1c575a">
+            <input type="hidden" name="from_name" value="Student Housing in Tilburg Website">
+            <input type="checkbox" name="botcheck" style="display: none;">
+
             <div class="wix-input-group">
-              <input type="text" placeholder="Name" data-i18n-placeholder="ph_name" required>
+              <input type="text" name="name" placeholder="Name" data-i18n-placeholder="ph_name" required>
             </div>
             <div class="wix-input-group">
-              <input type="email" placeholder="Email" data-i18n-placeholder="ph_email" required>
+              <input type="email" name="email" placeholder="Email" data-i18n-placeholder="ph_email" required>
             </div>
             <div class="wix-input-group">
-              <input type="tel" placeholder="Phone" data-i18n-placeholder="ph_phone">
+              <input type="tel" name="phone" placeholder="Phone" data-i18n-placeholder="ph_phone">
             </div>
             <div class="wix-input-group">
-              <input type="text" placeholder="Country" data-i18n-placeholder="ph_country">
+              <input type="text" name="country" placeholder="Country" data-i18n-placeholder="ph_country">
             </div>
             <div class="wix-input-group wix-form-full">
-              <input type="text" placeholder="Subject" data-i18n-placeholder="ph_subject" required>
+              <input type="text" name="subject" placeholder="Subject" data-i18n-placeholder="ph_subject" required>
             </div>
             <div class="wix-input-group wix-form-full">
-              <textarea rows="3" placeholder="Type your message here..." data-i18n-placeholder="ph_message" required></textarea>
+              <textarea name="message" rows="3" placeholder="Type your message here..." data-i18n-placeholder="ph_message" required></textarea>
             </div>
             <button type="submit" class="wix-submit-btn" data-i18n="btn_submit">Submit :)</button>
           </form>

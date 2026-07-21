@@ -368,4 +368,46 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
     }
   });
+
+  // Web3Forms AJAX Submission Handler
+  document.querySelectorAll('.wix-contact-form').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = form.querySelector('.wix-submit-btn');
+      const originalText = submitBtn ? submitBtn.textContent : 'Submit :)';
+      if (submitBtn) {
+        submitBtn.textContent = localStorage.getItem('sht_lang') === 'nl' ? 'Verzenden...' : 'Sending...';
+        submitBtn.disabled = true;
+      }
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        });
+        const result = await response.json();
+        if (result.success) {
+          alert(localStorage.getItem('sht_lang') === 'nl' ? 'Dank u wel! Uw bericht is succesvol verzonden.' : 'Thank you! Your message has been sent successfully.');
+          form.reset();
+        } else {
+          alert(result.message || 'Error sending message. Please try again.');
+        }
+      } catch (error) {
+        alert('Network error. Please try again later.');
+      } finally {
+        if (submitBtn) {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+      }
+    });
+  });
 });
