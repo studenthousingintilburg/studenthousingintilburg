@@ -29,14 +29,17 @@
       </button>
 
       <nav class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="aboutsht.html" class="nav-link">About SHT</a>
-        <a href="aboutsam.html" class="nav-link">About SAM</a>
-        <a href="apply.html" class="nav-link">Apply</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="aboutsht.html" class="nav-link" data-i18n="nav_aboutsht">About SHT</a>
+        <a href="aboutsam.html" class="nav-link" data-i18n="nav_aboutsam">About SAM</a>
+        <a href="apply.html" class="nav-link" data-i18n="nav_apply">Apply</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+        <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
         <div class="lang-selector">
-          <span>🇺🇸 EN</span>
+          <select class="lang-select" aria-label="Select Language">
+            <option value="en">🇺🇸 EN</option>
+            <option value="nl">🇳🇱 NL</option>
+          </select>
         </div>
       </nav>
     </div>
@@ -44,20 +47,20 @@
 
   <!-- Parallax Hero Section -->
   <section class="hero">
-    <h1 class="hero-title">Couchsurfing & Temporary Housing</h1>
-    <p class="hero-subtitle">For the homeless students of Tilburg</p>
+    <h1 class="hero-title" data-i18n="hero_title">Couchsurfing & Temporary Housing</h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">For the homeless students of Tilburg</p>
 
     <div class="partner-badge">
-      <span>Partnered with</span>
+      <span data-i18n="partner_with">Partnered with</span>
       <img src="assets/images/Logo Fractie SAM - Mercury White (1).png" alt="Student Party SAM Logo" class="partner-logo">
     </div>
   </section>
 
-  <!-- Media Coverage Section (Exact Wix Look: Black logos directly on blue background) -->
+  <!-- Media Coverage Section -->
   <section class="section section-blue">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">We Are Featured On</h2>
+        <h2 class="section-title" data-i18n="featured_on">We Are Featured On</h2>
       </div>
       <div class="featured-grid">
         <a href="https://universonline.nl/nieuws/2023/01/19/tilburg-couple-want-to-help-homeless-internationals-with-couch-surf-initiative/" target="_blank" rel="noopener" class="featured-logo-card">
@@ -80,46 +83,43 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Tilburg's Shortage of Housing</h2>
+        <h2 class="section-title" data-i18n="housing_shortage_title">Tilburg's Shortage of Housing</h2>
         <p class="section-desc">
-          Tilburg is estimated to have around 200 homeless students by the start of every semester. Some are lucky to find emergency accommodations, while others need to quit their studies before even starting. These numbers have only gotten worse over the years, therefore, if you can provide any sort of housing (from couches and air mattresses to studios and spare rooms), please <a href="formhosts.html"><strong>fill in our form and make a difference to someone.</strong></a>
+          <span data-i18n="housing_shortage_desc">Tilburg is estimated to have around 200 homeless students by the start of every semester. Some are lucky to find emergency accommodations, while others need to quit their studies before even starting. These numbers have only gotten worse over the years, therefore, if you can provide any sort of housing (from couches and air mattresses to studios and spare rooms), please</span> <a href="formhosts.html"><strong data-i18n="fill_form_link">fill in our form and make a difference to someone.</strong></a>
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Parallax What We Do Section -->
+  <!-- Parallax What We Do Section (Using Student1.png) -->
   <section class="section parallax-what-we-do">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">What We Do</h2>
-        <p class="section-desc">Our goal is to support as many students in Tilburg as we can.</p>
+        <h2 class="section-title" data-i18n="what_we_do_title">What We Do</h2>
+        <p class="section-desc" data-i18n="what_we_do_desc">Our goal is to support as many students in Tilburg as we can.</p>
       </div>
       
       <div class="cards-grid">
         <div class="feature-card">
           <div class="card-icon-svg">
-            <!-- White hand / match icon -->
             <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
           </div>
-          <h3>Find Matches</h3>
-          <p>We match homeless students with residents who are willing to host them for up to 3 months.</p>
+          <h3 data-i18n="find_matches_title">Find Matches</h3>
+          <p data-i18n="find_matches_desc">We match homeless students with residents who are willing to host them for up to 3 months.</p>
         </div>
         <div class="feature-card">
           <div class="card-icon-svg">
-            <!-- White viewing / pie icon -->
             <svg viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2 0v8.99h9c-.47-4.74-4.26-8.52-9-8.99zm0 11.01V22c4.74-.47 8.53-4.25 9-8.99h-9z"/></svg>
           </div>
-          <h3>Attend Viewings</h3>
-          <p>We offer to represent students who are unable to attend viewings themselves.</p>
+          <h3 data-i18n="attend_viewings_title">Attend Viewings</h3>
+          <p data-i18n="attend_viewings_desc">We offer to represent students who are unable to attend viewings themselves.</p>
         </div>
         <div class="feature-card">
           <div class="card-icon-svg">
-            <!-- White geometric / active icon -->
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
           </div>
-          <h3>Stay Active</h3>
-          <p>We ensure to work closely with everyone, trying to answer all questions within a day.</p>
+          <h3 data-i18n="stay_active_title">Stay Active</h3>
+          <p data-i18n="stay_active_desc">We ensure to work closely with everyone, trying to answer all questions within a day.</p>
         </div>
       </div>
     </div>
@@ -129,16 +129,16 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">About Student Party SAM</h2>
-        <p class="section-desc">
-          <strong>SHT</strong> is an initiative in collaboration with <strong>Student Party SAM</strong>.
+        <h2 class="section-title" data-i18n="about_sam_title">About Student Party SAM</h2>
+        <p class="section-desc" data-i18n="about_sam_desc">
+          SHT is an initiative in collaboration with Student Party SAM.
         </p>
       </div>
       <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <p style="font-size: 1.05rem; margin-bottom: 2rem; color: var(--text-muted);">
+        <p style="font-size: 1.05rem; margin-bottom: 2rem; color: var(--text-muted);" data-i18n="about_sam_body">
           SAM is a party in the university council which aims to represent all students of Tilburg University. The party values internationalisation of the university, but sees how students, both international and Dutch, have troubles finding proper housing. To excel at your studies, it is important to be able to live in a safe and welcoming environment.
         </p>
-        <a href="aboutsam.html" class="btn btn-primary">Learn More About SAM</a>
+        <a href="aboutsam.html" class="btn btn-primary" data-i18n="btn_learn_sam">Learn More About SAM</a>
       </div>
     </div>
   </section>
@@ -147,26 +147,26 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Host a Student / Apply for Housing</h2>
-        <p class="section-desc">Click under 'Host a Student' to offer emergency housing, or click under 'Apply for Housing' if you are currently homeless.</p>
+        <h2 class="section-title" data-i18n="host_apply_title">Host a Student / Apply for Housing</h2>
+        <p class="section-desc" data-i18n="host_apply_subtitle">Click under 'Host a Student' to offer emergency housing, or click under 'Apply for Housing' if you are currently homeless.</p>
       </div>
 
       <div class="split-portals">
         <div class="portal-card">
           <img src="assets/images/Student1.png" alt="Host a Student">
           <div class="portal-content">
-            <h3 class="portal-title">Host a Student</h3>
-            <p>I have a room, couch, or spare bed available.</p>
-            <a href="formhosts.html" class="btn btn-primary">I Have a Place</a>
+            <h3 class="portal-title" data-i18n="host_card_title">Host a Student</h3>
+            <p data-i18n="host_card_desc">I have a room, couch, or spare bed available.</p>
+            <a href="formhosts.html" class="btn btn-primary" data-i18n="btn_have_place">I Have a Place</a>
           </div>
         </div>
 
         <div class="portal-card">
           <img src="assets/images/group-students-table_23-2148166365_edited.jpg" alt="Apply for Housing">
           <div class="portal-content">
-            <h3 class="portal-title">Apply for Housing</h3>
-            <p>I am a student currently looking for emergency housing.</p>
-            <a href="formstudents.html" class="btn btn-primary">I Need a Place</a>
+            <h3 class="portal-title" data-i18n="apply_card_title">Apply for Housing</h3>
+            <p data-i18n="apply_card_desc">I am a student currently looking for emergency housing.</p>
+            <a href="formstudents.html" class="btn btn-primary" data-i18n="btn_need_place">I Need a Place</a>
           </div>
         </div>
       </div>
@@ -176,11 +176,11 @@
   <!-- Parallax Attend Viewing Banner -->
   <section class="section parallax-attend-viewing">
     <div class="container">
-      <h2 class="section-title">Want Us to Attend Your Viewing?</h2>
-      <p class="section-desc" style="margin-bottom: 2rem;">
+      <h2 class="section-title" data-i18n="attend_viewing_title">Want Us to Attend Your Viewing?</h2>
+      <p class="section-desc" style="margin-bottom: 2rem;" data-i18n="attend_viewing_desc">
         As a result of the current housing crisis, many international students are unable to leave their countries and, consequently, do not get the chance to attend Dutch viewings. We offer to become their representatives, raising their chances of finding accommodation and avoiding scammers.
       </p>
-      <a href="contact.html" class="btn btn-outline-white">Make a Request</a>
+      <a href="contact.html" class="btn btn-outline-white" data-i18n="btn_make_request">Make a Request</a>
     </div>
   </section>
 
@@ -188,12 +188,12 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Contact Us</h2>
+        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
       </div>
 
       <div class="contact-grid">
         <div class="contact-info-card" style="background: var(--primary-color); color: white;">
-          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1.5rem;">Get in Touch</h3>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1.5rem;" data-i18n="get_in_touch">Get in Touch</h3>
           <div class="contact-info-item">
             <span>✉️</span>
             <a href="mailto:studenthousingintilburg@gmail.com">studenthousingintilburg@gmail.com</a>
@@ -202,7 +202,7 @@
             <span>📱</span>
             <a href="https://wa.me/31635317814" target="_blank" rel="noopener">+31 6 3531 7814</a>
           </div>
-          <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.9;">
+          <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.9;" data-i18n="reach_out_anytime">
             Reach out to us anytime. We aim to respond within 24 hours.
           </p>
         </div>
@@ -225,35 +225,35 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/Logo Fractie SAM - Mercury White2.png" alt="SHT Footer Logo" style="height: 48px;">
-          <p>Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.</p>
+          <p data-i18n="footer_desc">Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.</p>
         </div>
 
         <div>
-          <h4 class="footer-title">Quick Links</h4>
+          <h4 class="footer-title" data-i18n="footer_quick_links">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutsht.html">About SHT</a></li>
-            <li><a href="aboutsam.html">About SAM</a></li>
-            <li><a href="apply.html">Apply for Housing / Host</a></li>
-            <li><a href="faq.html">Frequently Asked Questions</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="aboutsht.html" data-i18n="nav_aboutsht">About SHT</a></li>
+            <li><a href="aboutsam.html" data-i18n="nav_aboutsam">About SAM</a></li>
+            <li><a href="apply.html" data-i18n="nav_apply">Apply for Housing / Host</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Legal & Policies</h4>
+          <h4 class="footer-title" data-i18n="footer_legal">Legal & Policies</h4>
           <ul class="footer-links">
-            <li><a href="terms.html">Terms and Conditions</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="assets/pdf/General Terms and Conditions Student Housing in Tilburg.pdf" target="_blank">Download Terms (PDF)</a></li>
-            <li><a href="assets/pdf/PrivacyStatementSHT.pdf" target="_blank">Download Privacy Statement (PDF)</a></li>
+            <li><a href="terms.html" data-i18n="terms_conditions">Terms and Conditions</a></li>
+            <li><a href="privacy-policy.html" data-i18n="privacy_policy">Privacy Policy</a></li>
+            <li><a href="assets/pdf/General Terms and Conditions Student Housing in Tilburg.pdf" target="_blank" data-i18n="download_terms">Download Terms (PDF)</a></li>
+            <li><a href="assets/pdf/PrivacyStatementSHT.pdf" target="_blank" data-i18n="download_privacy">Download Privacy Statement (PDF)</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; Student Housing in Tilburg. All rights reserved.</p>
-        <p>In partnership with Student Party SAM</p>
+        <p data-i18n="copyright">&copy; Student Housing in Tilburg. All rights reserved.</p>
+        <p data-i18n="in_partnership">In partnership with Student Party SAM</p>
       </div>
     </div>
   </footer>

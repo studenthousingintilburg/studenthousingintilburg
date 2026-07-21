@@ -134,17 +134,32 @@ ul {
   font-weight: 600;
 }
 
-/* Language selector */
+/* Language selector dropdown */
 .lang-selector {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  background: var(--bg-light);
-  padding: 0.3rem 0.6rem;
+  position: relative;
+}
+
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--bg-light) url("data:image/svg+xml;utf8,<svg fill='%2300569e' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 0.6rem center;
+  border: 1px solid var(--border-color);
+  padding: 0.35rem 1.8rem 0.35rem 0.75rem;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--primary-color);
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+}
+
+.lang-select:hover, .lang-select:focus {
+  border-color: var(--primary-color);
+  background-color: var(--accent-blue);
 }
 
 /* Mobile Hamburger Toggle */
@@ -280,16 +295,16 @@ ul {
   color: var(--text-light);
 }
 
-/* Parallax Sections */
+/* Parallax Sections - Using Student1.png for What We Do */
 .parallax-what-we-do {
   position: relative;
-  background: linear-gradient(rgba(0, 80, 150, 0.85), rgba(0, 80, 150, 0.85)), url('../images/SHTBlueEffect.png') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 80, 150, 0.84), rgba(0, 80, 150, 0.88)), url('../images/Student1.png') center/cover fixed no-repeat;
   color: var(--text-light);
 }
 
 .parallax-attend-viewing {
   position: relative;
-  background: linear-gradient(rgba(0, 80, 150, 0.85), rgba(0, 80, 150, 0.85)), url('../images/SHTBlueEffect2.png') center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 80, 150, 0.84), rgba(0, 80, 150, 0.88)), url('../images/SHTBlueEffect2.png') center/cover fixed no-repeat;
   color: var(--text-light);
   text-align: center;
 }
@@ -332,7 +347,7 @@ ul {
   color: #e0f2fe;
 }
 
-/* --- Featured Logos Grid (Matching Original Wix Look) --- */
+/* --- Featured Logos Grid --- */
 .featured-grid {
   display: flex;
   flex-wrap: wrap;
@@ -375,9 +390,9 @@ ul {
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 2.5rem 1.75rem;
   border-radius: var(--radius-md);
   text-align: center;
@@ -385,7 +400,7 @@ ul {
 }
 
 .feature-card:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.18);
   transform: translateY(-4px);
 }
 
@@ -418,7 +433,7 @@ ul {
   opacity: 0.95;
 }
 
-/* --- Split Action Portals (Host / Student) --- */
+/* --- Split Action Portals --- */
 .split-portals {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
