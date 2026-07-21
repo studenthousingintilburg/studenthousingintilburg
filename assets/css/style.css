@@ -771,6 +771,19 @@ ul {
   border-bottom-color: #ffffff;
 }
 
+/* Prevent Chrome / Edge / Safari Browser Autofill from turning background white */
+.wix-input-group input:-webkit-autofill,
+.wix-input-group input:-webkit-autofill:hover,
+.wix-input-group input:-webkit-autofill:focus,
+.wix-input-group textarea:-webkit-autofill,
+.wix-input-group textarea:-webkit-autofill:hover,
+.wix-input-group textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #00569e inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+}
+
 .wix-submit-btn {
   grid-column: 1 / -1;
   background: #ffffff;
