@@ -158,18 +158,18 @@ ul {
   padding: 0.5rem;
 }
 
-/* --- Hero Section --- */
+/* --- Parallax Hero Section --- */
 .hero {
   position: relative;
-  background: linear-gradient(rgba(0, 40, 80, 0.65), rgba(0, 65, 130, 0.75)), url('../images/Banner.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 40, 80, 0.65), rgba(0, 65, 130, 0.75)), url('../images/Banner.jpg') center/cover fixed no-repeat;
   color: var(--text-light);
   text-align: center;
-  padding: 6rem 1.5rem 5rem;
+  padding: 6.5rem 1.5rem 5.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 480px;
+  min-height: 520px;
 }
 
 .hero-title {
@@ -280,6 +280,20 @@ ul {
   color: var(--text-light);
 }
 
+/* Parallax Sections */
+.parallax-what-we-do {
+  position: relative;
+  background: linear-gradient(rgba(0, 80, 150, 0.85), rgba(0, 80, 150, 0.85)), url('../images/SHTBlueEffect.png') center/cover fixed no-repeat;
+  color: var(--text-light);
+}
+
+.parallax-attend-viewing {
+  position: relative;
+  background: linear-gradient(rgba(0, 80, 150, 0.85), rgba(0, 80, 150, 0.85)), url('../images/SHTBlueEffect2.png') center/cover fixed no-repeat;
+  color: var(--text-light);
+  text-align: center;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -299,7 +313,9 @@ ul {
   margin-bottom: 0.75rem;
 }
 
-.section-blue .section-title {
+.section-blue .section-title,
+.parallax-what-we-do .section-title,
+.parallax-attend-viewing .section-title {
   color: var(--text-light);
 }
 
@@ -310,43 +326,44 @@ ul {
   color: var(--text-muted);
 }
 
-.section-blue .section-desc {
+.section-blue .section-desc,
+.parallax-what-we-do .section-desc,
+.parallax-attend-viewing .section-desc {
   color: #e0f2fe;
 }
 
-/* --- Featured Logos Grid --- */
+/* --- Featured Logos Grid (Matching Original Wix Look) --- */
 .featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
 .featured-logo-card {
-  background: var(--bg-white);
-  padding: 1.25rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 220px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   transition: var(--transition);
 }
 
 .featured-logo-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: scale(1.05);
 }
 
 .featured-logo-card img {
-  max-height: 55px;
-  width: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  border-radius: 0;
 }
 
 /* --- Feature Cards (3 columns) --- */
@@ -358,9 +375,9 @@ ul {
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 2.5rem 1.75rem;
   border-radius: var(--radius-md);
   text-align: center;
@@ -368,20 +385,23 @@ ul {
 }
 
 .feature-card:hover {
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.16);
   transform: translateY(-4px);
 }
 
-.card-icon {
-  width: 60px;
-  height: 60px;
+.card-icon-svg {
+  width: 54px;
+  height: 54px;
   margin: 0 auto 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  font-size: 1.75rem;
+}
+
+.card-icon-svg svg {
+  width: 48px;
+  height: 48px;
+  fill: #ffffff;
 }
 
 .feature-card h3 {
@@ -713,6 +733,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .hero,
+  .parallax-what-we-do,
+  .parallax-attend-viewing {
+    background-attachment: scroll;
+  }
   .mobile-toggle {
     display: block;
   }
@@ -735,6 +760,10 @@ ul {
   .hero {
     padding: 4rem 1rem 3.5rem;
     min-height: 380px;
+  }
+  .featured-logo-card {
+    width: 140px;
+    height: 140px;
   }
   .footer-bottom {
     flex-direction: column;
