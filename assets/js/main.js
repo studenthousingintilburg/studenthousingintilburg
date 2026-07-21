@@ -392,17 +392,10 @@ document.addEventListener('DOMContentLoaded', () => {
           alert(localStorage.getItem('sht_lang') === 'nl' ? 'Dank u wel! Uw bericht is succesvol verzonden.' : 'Thank you! Your message has been sent successfully.');
           form.reset();
         } else {
-          // If Web3Forms returns an error message, show it or fallback to native submit
-          if (result.message && result.message.includes('Activation')) {
-            alert('Please check your email inbox to activate your Web3Forms access key!');
-          } else {
-            alert(result.message || 'Submitting form...');
-            form.submit();
-          }
+          HTMLFormElement.prototype.submit.call(form);
         }
       } catch (error) {
-        // Fallback to standard native HTML submission if AJAX is blocked by CORS/extensions
-        form.submit();
+        HTMLFormElement.prototype.submit.call(form);
       } finally {
         if (submitBtn) {
           submitBtn.textContent = originalText;
