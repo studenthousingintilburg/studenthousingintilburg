@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Student Housing in Tilburg (SHT) - JavaScript & Multilingual Logic
+   Student Housing in Tilburg (SHT) - Multilingual Translation Logic (EN / NL)
    ========================================================================== */
 
 const i18n = {
@@ -50,6 +50,14 @@ const i18n = {
     contact_title: "Contact Us",
     get_in_touch: "Get in Touch",
     reach_out_anytime: "Reach out to us anytime. We aim to respond within 24 hours.",
+    
+    ph_name: "Name",
+    ph_email: "Email",
+    ph_phone: "Phone",
+    ph_country: "Country",
+    ph_subject: "Subject",
+    ph_message: "Type your message here...",
+    btn_submit: "Submit :)",
     
     footer_desc: "Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.",
     footer_quick_links: "Quick Links",
@@ -109,6 +117,14 @@ const i18n = {
     get_in_touch: "Contact Opnemen",
     reach_out_anytime: "Neem gerust contact met ons op. Wij streven ernaar binnen 24 uur te reageren.",
     
+    ph_name: "Naam",
+    ph_email: "E-mailadres",
+    ph_phone: "Telefoonnummer",
+    ph_country: "Land",
+    ph_subject: "Onderwerp",
+    ph_message: "Typ hier uw bericht...",
+    btn_submit: "Versturen :)",
+    
     footer_desc: "Student Housing in Tilburg is een non-profit initiatief voor wederzijdse hulp dat internationale en Nederlandse studenten helpt bij het vinden van noodopvang.",
     footer_quick_links: "Snelle Links",
     footer_legal: "Juridisch & Beleid",
@@ -123,27 +139,38 @@ const i18n = {
 
 function setLanguage(lang) {
   const dict = i18n[lang] || i18n.en;
+  
+  // Translate text content
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
       el.textContent = dict[key];
     }
   });
+
+  // Translate input placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key]) {
+      el.setAttribute('placeholder', dict[key]);
+    }
+  });
+
+  // Save selected language in browser localStorage
   localStorage.setItem('sht_lang', lang);
   
-  // Synchronize select dropdowns
-  const langSelects = document.querySelectorAll('.lang-select');
-  langSelects.forEach(select => {
+  // Synchronize all language selector dropdowns
+  document.querySelectorAll('.lang-select').forEach(select => {
     select.value = lang;
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initial Language setup
+  // Initial Language setup from localStorage or default to EN
   const currentLang = localStorage.getItem('sht_lang') || 'en';
   setLanguage(currentLang);
 
-  // Bind change events to all language selectors
+  // Bind change listener to all language selectors
   document.querySelectorAll('.lang-select').forEach(select => {
     select.addEventListener('change', (e) => {
       setLanguage(e.target.value);
