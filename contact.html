@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Student Housing In Tilburg</title>
+  <meta name="description" content="Get in touch with Student Housing in Tilburg for inquiries, host support, or viewing requests.">
+  <link rel="icon" type="image/png" href="assets/images/SHT_favicon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(0, 86, 158, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/LogoSHT.png" alt="Student Housing in Tilburg Logo" class="logo-img">
+      </a>
+      
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        ☰
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutsht.html" class="nav-link">About SHT</a>
+        <a href="aboutsam.html" class="nav-link">About SAM</a>
+        <a href="apply.html" class="nav-link">Apply</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <div class="lang-selector">
+          <span>🇺🇸 EN</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="hero" style="min-height: 220px; padding: 3.5rem 1.5rem 2.5rem;">
+    <h1 class="hero-title">Contact Us</h1>
+    <p class="hero-subtitle">We are here to answer your questions and assist with housing</p>
+  </section>
+
+  <!-- Contact & Form Grid Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Contact Information -->
+        <div style="background: var(--primary-color); color: white; padding: 2.5rem; border-radius: var(--radius-lg);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.6rem; text-transform: uppercase; margin-bottom: 1.5rem;">Contact Information</h3>
+          
+          <div class="contact-info-item">
+            <span style="font-size: 1.4rem;">✉️</span>
+            <div>
+              <div style="font-size: 0.85rem; opacity: 0.85;">Email Us</div>
+              <a href="mailto:studenthousingintilburg@gmail.com" style="color: white; font-weight: 600;">studenthousingintilburg@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span style="font-size: 1.4rem;">💬</span>
+            <div>
+              <div style="font-size: 0.85rem; opacity: 0.85;">WhatsApp Support</div>
+              <a href="https://wa.me/31635317814" target="_blank" rel="noopener" style="color: white; font-weight: 600;">+31 6 3531 7814</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span style="font-size: 1.4rem;">🎓</span>
+            <div>
+              <div style="font-size: 0.85rem; opacity: 0.85;">Student Party SAM</div>
+              <a href="mailto:db@fractiesam.nl" style="color: white; font-weight: 600;">db@fractiesam.nl</a>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">Location</h4>
+            <p style="font-size: 0.95rem; opacity: 0.95;">
+              Tilburg, The Netherlands<br>
+              Serving Tilburg University & Fontys University Students
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Message Form -->
+        <div style="background: var(--bg-white); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--primary-color); text-transform: uppercase; margin-bottom: 1.5rem;">Send Us a Message</h3>
+          
+          <form action="mailto:studenthousingintilburg@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="e.g. Viewing Request / General Question" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section section-alt" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 1.5rem;">
+        <h2 class="section-title">Tilburg Location Map</h2>
+      </div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79272.93489814421!2d5.01188375!3d51.5605963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6be8021d7b055%3A0xc4a3832c3f87b8f0!2sTilburg%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1700000000000" 
+          allowfullscreen="" 
+          loading="lazy" 
+          title="Tilburg Map Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/Logo Fractie SAM - Mercury White2.png" alt="SHT Footer Logo" style="height: 48px;">
+          <p>Student Housing in Tilburg is a non-profit mutual aid initiative dedicated to helping international and Dutch students find emergency housing.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutsht.html">About SHT</a></li>
+            <li><a href="aboutsam.html">About SAM</a></li>
+            <li><a href="apply.html">Apply for Housing / Host</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Legal & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="assets/pdf/General Terms and Conditions Student Housing in Tilburg.pdf" target="_blank">Download Terms (PDF)</a></li>
+            <li><a href="assets/pdf/PrivacyStatementSHT.pdf" target="_blank">Download Privacy Statement (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; Student Housing in Tilburg. All rights reserved.</p>
+        <p>In partnership with Student Party SAM</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
